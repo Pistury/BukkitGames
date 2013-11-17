@@ -221,17 +221,6 @@ public class BGFeast {
 			case 3:
 				m = Material.ENCHANTMENT_TABLE;
 				break;
-			case 4:
-				m = Material.FENCE;
-				break;
-			case 5:
-				break;
-			case 6:
-				m = Material.DIAMOND_BLOCK;
-				break;
-			case 7:
-				m = Material.BEACON;
-				break;
 			case -1:
 				break;
 			case -2:
@@ -296,17 +285,6 @@ public class BGFeast {
 				break;
 			case 3:
 				m = Material.ENCHANTMENT_TABLE;
-				break;
-			case 4:
-				m = Material.FENCE;
-				break;
-			case 5:
-				break;
-			case 6:
-				m = Material.DIAMOND_BLOCK;
-				break;
-			case 7:
-				m = Material.BEACON;
 				break;
 			case -1:
 				break;
