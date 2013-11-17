@@ -51,19 +51,19 @@ public class BGChat {
 	public static void printHelpChat(Player player) {
 			BGChat.printPlayerChat(player, BGMain.SERVER_TITLE);
 			String are = "are";
-			String players = "players";
+			String players = "jogadores";
 			if (BGMain.getGamers().length == 1) {
 				are = "is";
-				players = "player";
+				players = "jogador";
 			}
 
 			Integer timeleft = BGMain.MAX_GAME_RUNNING_TIME
 					- BGMain.GAME_RUNNING_TIME;
 			String is = "are";
-			String minute = "minutes";
+			String minute = "minutos";
 			if (timeleft <= 1) {
-				is = "minute";
-				minute = "minute";
+				is = "minuto";
+				minute = "minuto";
 			}
 			player.sendMessage(ChatColor.GRAY + " - There " + are + " "
 					+ BGMain.getGamers().length + " " + players + " online.");
@@ -99,8 +99,8 @@ public class BGChat {
 			player.sendMessage("");
 			player.sendMessage(ChatColor.AQUA + "Available kits: " + ChatColor.GRAY + "(/kit [KitName])");
 			player.sendMessage("");
-			player.sendMessage(ChatColor.GREEN + "Your kits: " + ChatColor.WHITE + yourkits);
-			player.sendMessage(ChatColor.GREEN + "Other kits: " + ChatColor.WHITE + otherkits);
+			player.sendMessage(ChatColor.GREEN + "Kits Disponiveis: " + ChatColor.WHITE + yourkits);
+			player.sendMessage(ChatColor.GREEN + "Outros Kits: " + ChatColor.WHITE + otherkits);
 			player.sendMessage(ChatColor.AQUA + "More kits available at: "
 					+ BGMain.KIT_BUY_WEB);
 			player.sendMessage("");
@@ -236,7 +236,7 @@ public class BGChat {
 						}
 					container.clear();
 				} catch (Exception e) {
-					log.warning("[BukkitGames] Error while trying to parse kit '" + kitname + "'");
+					log.warning("[hg] Error while trying to parse kit '" + kitname + "'");
 					e.printStackTrace();
 				}	
 			 }
