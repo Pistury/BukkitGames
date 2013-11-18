@@ -536,9 +536,9 @@ public class BGGameListener implements Listener {
 		}
 
 		if (BGMain.GAMESTATE == GameState.GAME & !p.isDead()) {
-			BGChat.printDeathChat(p.getName() + " left the game.");
+			BGChat.printDeathChat(p.getName() + " Desistiu.");
 			if (!BGMain.ADV_CHAT_SYSTEM) {
-				BGChat.printDeathChat(BGMain.getGamers().length - 1 + " players remaining.");
+				BGChat.printDeathChat(BGMain.getGamers().length - 1 + " Jogadores Restantes.");
 				BGChat.printDeathChat("");
 			}
 			Location light = p.getLocation();
