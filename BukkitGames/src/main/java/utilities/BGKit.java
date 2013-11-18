@@ -443,7 +443,7 @@ public class BGKit {
 			stringArray[0] = Character.toUpperCase(stringArray[0]);
 			kitname = new String(stringArray);
 			
-			BGChat.printPlayerChat(player, "You have chosen " + kitname + " as your kit.");
+			BGChat.printPlayerChat(player, "You are a " + kitname + "");
 			setKitDisplayName(player, kitname);
 
 		} else {
