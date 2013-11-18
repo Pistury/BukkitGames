@@ -441,7 +441,7 @@ public class BGMain extends JavaPlugin {
 		}
 
 		for (Player p : getPlayers()) {
-			p.kickPlayer(ChatColor.YELLOW + "Server is restarting!");
+			p.kickPlayer(ChatColor.YELLOW + "Server Resetando!");
 		}
 		
 		Bukkit.getServer().unloadWorld(Bukkit.getServer().getWorlds().get(0), false);
@@ -457,6 +457,7 @@ public class BGMain extends JavaPlugin {
 	public static void startgame() {
 		log.info("Game phase: 2 - Starting");
 		PreGameTimer.cancel();
+	        Location startFrom = getlocation();
 		new InvincibilityTimer();
 
 		BGMain.GAMESTATE = GameState.INVINCIBILITY;
@@ -508,7 +509,7 @@ public class BGMain extends JavaPlugin {
 				p.getVehicle().eject();
 			if (!RANDOM_START) {
 				Random r = new Random();
-				Location startFrom = getSpawn();
+				Location startFrom = getlocation();
 				Location loc = startFrom.clone();
 				int addx;
 				int addy;
@@ -788,7 +789,7 @@ public class BGMain extends JavaPlugin {
 					
 					public void run() {
 						if(pl.isOnline())
-							pl.kickPlayer(ChatColor.GOLD + "" + ChatColor.BOLD + "YOU HAVE WON THIS GAME! \n" + ChatColor.GOLD +"Thanks for playing the BukkitGames!");
+							pl.kickPlayer(ChatColor.GOLD + "" + ChatColor.BOLD + "YOU HAVE WON THIS GAME! \n" + ChatColor.GOLD +"Obrigado Por Jogar!");
 						
 						Bukkit.getServer().getScheduler().cancelAllTasks();
 						Bukkit.getServer().shutdown();
